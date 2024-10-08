@@ -133,7 +133,7 @@
     </div>
 
     <div style="margin-top: 1rem; text-align: justify;">
-        <p>Menerangkan bahwa orang tersebut diatas telah kehilangan {{ $data['barang_hilang'] ?? '..............................' }} atas nama {{ $data['nama_lengkap'] ?? '..............................' }} NIK: {{ $data['nik'] ?? '..............................' }} NKK:  {{ $data['nkk'] ?? '..............................' }} diketahui hilang pada hari/tanggal {{ \Carbon\Carbon::parse($data->tanggal_hilang)->locale('id')->translatedFormat('d F') }} Waktu Pukul: {{ $data['waktu_hilang'] ?? '..............................' }} WIB. Di {{ $data['tempat_hilang'] ?? '..............................' }}. Surat keterangan ini digunakan untuk  {{ $data['keperluan'] ?? '..............................' }}</p>
+        <p>Menerangkan bahwa orang tersebut diatas telah kehilangan {{ $data['barang_hilang'] ?? '..............................' }} atas nama {{ $data['nama_lengkap'] ?? '..............................' }} NIK: {{ $data['nik'] ?? '..............................' }} NKK:  {{ $data['nkk'] ?? '..............................' }} diketahui hilang pada hari/tanggal {{ \Carbon\Carbon::parse($data->tanggal_hilang)->locale('id')->translatedFormat('l, d F Y') }} Waktu Pukul: {{ $data['waktu_hilang'] ?? '..............................' }} WIB. Di {{ $data['tempat_hilang'] ?? '..............................' }}. Surat keterangan ini digunakan untuk  {{ $data['keperluan'] ?? '..............................' }}</p>
     </div>
 
     <div style="margin-top: 1.5rem;">
